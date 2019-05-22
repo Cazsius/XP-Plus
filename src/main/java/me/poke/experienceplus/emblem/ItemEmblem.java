@@ -26,7 +26,8 @@ public abstract class ItemEmblem extends Item {
 
     protected ItemEmblem(String name) {
         setRegistryName(name);
-        setUnlocalizedName(ExperiencePlus.MOD_ID + "." + name);
+        setTranslationKey(name);
+        //setRegistryName(ExperiencePlus.MOD_ID + "." + name);
         setCreativeTab(ExperiencePlus.CTAB);
         setMaxStackSize(1);
     }
@@ -59,7 +60,7 @@ public abstract class ItemEmblem extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flag) {
-        String key = stack.getUnlocalizedName() + ".tooltip";
+        String key = stack.getItem().getRegistryName() + ".tooltip";
         if (I18n.hasKey(key)) {
             // Description tooltips
             tooltip.add(I18n.format(key));

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "experienceplus:items/emblem_night"
+    "layer0": "experienceplus:items/advanced/night_card"
   }
 }

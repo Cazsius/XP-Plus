@@ -15,13 +15,14 @@ public class ItemCrystal extends Item {
 
     public ItemCrystal(String name) {
         setRegistryName("crystal_" + name);
-        setUnlocalizedName(ExperiencePlus.MOD_ID + ".crystal_" + name);
+        setTranslationKey("crystal_" + name);
+        //setRegistryName(ExperiencePlus.MOD_ID + ".crystal_" + name);
         setCreativeTab(ExperiencePlus.CTAB);
     }
 
     @Override @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flag) {
-        String key = stack.getUnlocalizedName() + ".tooltip";
+        String key = stack.getItem().getRegistryName() + ".tooltip";
         if (I18n.hasKey(key)) {
             tooltip.add(I18n.format(key));
         }

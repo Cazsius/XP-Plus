@@ -29,7 +29,7 @@ public class RegistryManager {
         // Healing Emblem
         EMBLEM_HEALING(new EmblemHealing("emblem_healing", 15, 5.0f)),
         // Bridging Emblem
-        BRIDGING_EMBLEM(new EmblemBridging("emblem_bridging", 30)),
+        //EMBLEM_BRIDGING(new EmblemBridging("emblem_bridging", 30)),
         // Time Emblems
         EMBLEM_DAY(new EmblemTime("emblem_day", 15, TimeStage.DAY)),
         EMBLEM_NIGHT(new EmblemTime("emblem_night", 15, TimeStage.NIGHT)),
@@ -38,7 +38,7 @@ public class RegistryManager {
         EMBLEM_RAIN(new EmblemWeather("emblem_rain", 10, WeatherType.RAIN)),
         EMBLEM_THUNDER(new EmblemWeather("emblem_thunder", 10, WeatherType.THUNDER)),
         // Effect Emblems
-        EMBLEM_GLOWING(new EmblemEffect("emblem_glowing", 30, MobEffects.GLOWING, 0)),
+        //EMBLEM_GLOWING(new EmblemEffect("emblem_glowing", 30, MobEffects.GLOWING, 0)),
         EMBLEM_HASTE(new EmblemEffect("emblem_haste", 30, MobEffects.HASTE, 0)),
         EMBLEM_JUMP(new EmblemEffect("emblem_jump", 30, MobEffects.JUMP_BOOST, 0)),
         EMBLEM_RESISTANCE(new EmblemEffect("emblem_resistance", 30, MobEffects.RESISTANCE, 0)),
@@ -91,7 +91,7 @@ public class RegistryManager {
 
         @SubscribeEvent
         public static void onRecipeRegistry(RegistryEvent.Register<IRecipe> event) {
-            // Crystals
+            /*// Crystals
             registerCrystalRecipe(ModItems.CRYSTAL_ADVANCED.get(), Items.NETHER_STAR);
             registerCrystalRecipe(ModItems.CRYSTAL_BASIC.get(), Items.EMERALD);
             // Time Emblems
@@ -108,7 +108,7 @@ public class RegistryManager {
             registerBasicRecipe(ModItems.EMBLEM_JUMP.get(), Items.RABBIT, Blocks.SLIME_BLOCK);
             registerAdvancedRecipe(ModItems.EMBLEM_RESISTANCE.get(), Blocks.IRON_BLOCK, Blocks.IRON_BLOCK);
             registerBasicRecipe(ModItems.EMBLEM_SPEED.get(), Items.SUGAR, PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.SWIFTNESS));
-            registerAdvancedRecipe(ModItems.EMBLEM_STRENGTH.get(), Items.BLAZE_POWDER, Items.BLAZE_ROD);
+            registerAdvancedRecipe(ModItems.EMBLEM_STRENGTH.get(), Items.BLAZE_POWDER, Items.BLAZE_ROD);*/
 
         }
 

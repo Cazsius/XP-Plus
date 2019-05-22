@@ -1,25 +1,25 @@
 itemGroup.experienceplus=Experience Plus
 
-item.experienceplus.crystal_basic.name=Basic Experience Crystal
-item.experienceplus.crystal_advanced.name=Advanced Experience Crystal
+item.crystal_basic.name=Basic Experience Crystal
+item.crystal_advanced.name=Advanced Experience Crystal
 
-item.experienceplus.emblem_healing.name=Emblem of Healing
+item.emblem_healing.name=Emblem of Healing
 
-item.experienceplus.emblem_bridging.name=Emblem of Bridging
+item.emblem_bridging.name=Emblem of Bridging
 
-item.experienceplus.emblem_day.name=Emblem of Dawn
-item.experienceplus.emblem_night.name=Emblem of Dusk
+item.emblem_day.name=Emblem of Dawn
+item.emblem_night.name=Emblem of Dusk
 
-item.experienceplus.emblem_clear.name=Emblem of Clear Skies
-item.experienceplus.emblem_rain.name=Emblem of Downpour
-item.experienceplus.emblem_thunder.name=Emblem of Storms
+item.emblem_clear.name=Emblem of Clear Skies
+item.emblem_rain.name=Emblem of Downpour
+item.emblem_thunder.name=Emblem of Storms
 
-item.experienceplus.emblem_glowing.name=Emblem of Glowing
-item.experienceplus.emblem_haste.name=Emblem of Haste
-item.experienceplus.emblem_jump.name=Emblem of Leaping
-item.experienceplus.emblem_resistance.name=Emblem of Warding
-item.experienceplus.emblem_speed.name=Emblem of Swiftness
-item.experienceplus.emblem_strength.name=Emblem of Strength
+item.emblem_glowing.name=Emblem of Glowing
+item.emblem_haste.name=Emblem of Haste
+item.emblem_jump.name=Emblem of Leaping
+item.emblem_resistance.name=Emblem of Warding
+item.emblem_speed.name=Emblem of Swiftness
+item.emblem_strength.name=Emblem of Strength
 
 tooltip.experienceplus.enable=Sneak + right-click to enable effect
 tooltip.experienceplus.disable=Sneak + right-click to disable effect

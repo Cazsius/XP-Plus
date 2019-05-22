@@ -22,7 +22,7 @@ public class ExperiencePlus {
 
     public static final CreativeTabs CTAB = new CreativeTabs(ExperiencePlus.MOD_ID) {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ModItems.CRYSTAL_ADVANCED.get());
         }
     };

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "experienceplus:items/emblem_resistance"
+    "layer0": "experienceplus:items/basic/resistance_card"
   }
 }

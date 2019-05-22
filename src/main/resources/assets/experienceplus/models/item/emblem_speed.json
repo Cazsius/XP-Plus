@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "experienceplus:items/emblem_speed"
+    "layer0": "experienceplus:items/basic/speed_card"
   }
 }
