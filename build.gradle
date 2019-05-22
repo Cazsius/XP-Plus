@@ -13,7 +13,7 @@ buildscript {
 
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "1.01"
+version = "1.02"
 group= "me.poke.experienceplus"
 archivesBaseName = "experienceplus"
 
@@ -34,8 +34,8 @@ minecraft {
 processResources {
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
-        expand  '%mod_version%':project.version,
-                '%mc_version%':project.minecraft.version
+        expand  'version':project.version,
+                'mcversion':project.minecraft.version
     }
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'

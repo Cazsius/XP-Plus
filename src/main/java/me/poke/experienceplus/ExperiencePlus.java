@@ -17,7 +17,7 @@ public class ExperiencePlus {
 
     public static final String MOD_ID = "experienceplus";
     public static final String MOD_NAME = "Experience Plus";
-    public static final String MOD_VERSION = "%mod_version%";
+    public static final String MOD_VERSION = "1.02";
     public static final String MC_VERSION = "[1.12,1.13)";
 
     public static final CreativeTabs CTAB = new CreativeTabs(ExperiencePlus.MOD_ID) {
