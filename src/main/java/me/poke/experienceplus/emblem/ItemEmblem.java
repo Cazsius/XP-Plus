@@ -152,6 +152,14 @@ public abstract class ItemEmblem extends Item {
                 if (getEmblemType().equals(EmblemType.MANUAL) && !player.capabilities.isCreativeMode) {
                     player.getHeldItem(hand).damageItem(1, player);
                 }
+                if (getEmblemType().equals(EmblemType.TOGGLEABLE)) {
+                    NBTTagCompound nbt = player.getHeldItem(hand).getTagCompound();
+                    nbt.setBoolean("activated", true);
+                    world.playSound(null, player.posX, player.posY, player.posZ,
+                            SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.PLAYERS,
+                            0.5F, 0.8F);
+                    nbt.setBoolean("enabled", true);
+                }
                 return true;
             }
         }
