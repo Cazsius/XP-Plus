@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "IAI",
+    "IEI",
+    "IAI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "experienceplus:crystal_advanced"
+    },
+    "A":
+    {
+      "item": "minecraft:golden_apple",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "experienceplus:emblem_healing"
+  }
+}
