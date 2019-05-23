@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "experienceplus:items/advanced/advanced_xp_crystal"
+    "layer0": "experienceplus:items/advanced"
   }
 }

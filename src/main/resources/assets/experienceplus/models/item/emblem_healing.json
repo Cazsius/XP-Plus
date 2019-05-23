@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "experienceplus:items/advanced/healing_card"
+    "layer0": "experienceplus:items/healing"
   }
 }

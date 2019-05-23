@@ -24,6 +24,8 @@ import java.util.Random;
 
 public abstract class ItemEmblem extends Item {
 
+    protected boolean requires_sneak = true;
+
     protected ItemEmblem(String name) {
         setRegistryName(name);
         setTranslationKey(name);
@@ -44,7 +46,7 @@ public abstract class ItemEmblem extends Item {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand) {
-        if (player.isSneaking()) {
+        if (!requires_sneak || player.isSneaking()) {
             ActionResult<ItemStack> success = new ActionResult<>(EnumActionResult.SUCCESS, player.getHeldItem(hand));
             if (!toggleEmblemState(world, player, hand)) {
                 if (tryActivateEmblem(world, player, hand)) {
@@ -94,8 +96,10 @@ public abstract class ItemEmblem extends Item {
                 boolean enabled = stack.getTagCompound().getBoolean("enabled");
                 tooltip.add(I18n.format("tooltip.experienceplus." + (enabled ? "disable" : "enable")));
             } else {
-                tooltip.add(I18n.format("tooltip.experienceplus.activate", getLevelCost()));
+                tooltip.add(I18n.format(requires_sneak ? "tooltip.experienceplus.sneakactivate" : "tooltip.experienceplus.activate", getLevelCost()));
             }
+        } else {
+            tooltip.add(I18n.format(requires_sneak ? "tooltip.experienceplus.sneakuse" : "tooltip.experienceplus.use", getLevelCost()));
         }
         return tooltip;
     }
@@ -140,12 +144,12 @@ public abstract class ItemEmblem extends Item {
 
     private boolean tryActivateEmblem(World world, EntityPlayer player, EnumHand hand) {
         int expCost = ExpLevelHelper.getExperienceForLevel(getLevelCost());
-        if (ExpLevelHelper.getPlayerExp(player) >= expCost) {
+        if (player.capabilities.isCreativeMode || ExpLevelHelper.getPlayerExp(player) >= expCost) {
             if (onUseEmblem(world, player)) {
                 ExpLevelHelper.removePlayerExp(player, expCost);
                 playActivationSound(world, player);
                 createActivationAura(world, player);
-                if (getEmblemType().equals(EmblemType.MANUAL)) {
+                if (getEmblemType().equals(EmblemType.MANUAL) && !player.capabilities.isCreativeMode) {
                     player.getHeldItem(hand).damageItem(1, player);
                 }
                 return true;

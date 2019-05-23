@@ -13,6 +13,7 @@ public class EmblemHealing extends ItemEmblem {
         this.cost = cost;
         this.health = health;
         setMaxDamage(15);
+        requires_sneak = false;
     }
 
     @Override
@@ -21,7 +22,7 @@ public class EmblemHealing extends ItemEmblem {
             return false;
         }
         player.heal(health);
-        player.getCooldownTracker().setCooldown(this, 600);
+        player.getCooldownTracker().setCooldown(this, 200);
         return true;
     }
 
