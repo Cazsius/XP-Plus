@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "IDI",
+    "IEI",
+    "IGI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "experienceplus:crystal_basic"
+    },
+    "D":
+    {
+      "item": "minecraft:yellow_flower",
+      "data": 0
+    },
+    "G":
+    {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "result":
+  {
+    "item": "experienceplus:emblem_clear"
+  }
+}

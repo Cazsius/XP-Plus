@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "xpplus:items/basic/jump_card"
-    }
-}
