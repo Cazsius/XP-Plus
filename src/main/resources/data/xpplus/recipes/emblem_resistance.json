@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "IRI",
+    "IEI",
+    "IRI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "xpplus:basic"
+    },
+    "R":
+    {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result":
+  {
+    "item": "xpplus:emblem_resistance"
+  }
+}

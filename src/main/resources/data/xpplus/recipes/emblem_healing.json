@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "IAI",
+    "IEI",
+    "IAI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "xpplus:advanced"
+    },
+    "A":
+    {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result":
+  {
+    "item": "xpplus:emblem_healing"
+  }
+}

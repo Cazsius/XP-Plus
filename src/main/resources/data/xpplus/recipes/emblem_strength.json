@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "IPI",
+    "IEI",
+    "IBI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "xpplus:basic"
+    },
+    "P":
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    "B":
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result":
+  {
+    "item": "xpplus:emblem_strength"
+  }
+}

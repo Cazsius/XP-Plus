@@ -1,0 +1,37 @@
+
+{
+"itemGroup.xpplus":"Experience Plus",
+
+"item.xpplus.basic":"Basic Experience Crystal",
+"item.xpplus.advanced":"Advanced Experience Crystal",
+
+"item.xpplus.emblem_healing":"Emblem of Healing",
+
+"item.xpplus.emblem_bridging":"Emblem of Bridging",
+
+"item.xpplus.emblem_day":"Emblem of Dawn",
+"item.xpplus.emblem_night":"Emblem of Dusk",
+
+"item.xpplus.emblem_clear":"Emblem of Clear Skies",
+"item.xpplus.emblem_rain":"Emblem of Downpour",
+"item.xpplus.emblem_thunder":"Emblem of Storms",
+
+"item.xpplus.emblem_glowing":"Emblem of Glowing",
+"item.xpplus.emblem_haste":"Emblem of Haste",
+"item.xpplus.emblem_jump":"Emblem of Leaping",
+"item.xpplus.emblem_resistance":"Emblem of Warding",
+"item.xpplus.emblem_speed":"Emblem of Swiftness",
+"item.xpplus.emblem_strength":"Emblem of Strength",
+
+"tooltip.experienceplus.enable":"Sneak + right-click to enable effect",
+"tooltip.experienceplus.disable":"Sneak + right-click to disable effect",
+"tooltip.experienceplus.sneakactivate":"Sneak + right-click to activate emblem (Requires %d levels)",
+"tooltip.experienceplus.activate":"Right-click to activate (Requires %d levels)",
+"tooltip.experienceplus.sneakuse":"Sneak + right-click to use emblem (Requires %d levels)",
+"tooltip.experienceplus.use":"Right-click to use (Requires %d levels)",
+"message.experienceplus.no_experience":"You need more experience to activate this emblem!",
+
+"tooltip.experienceplus.remaining_minutes":"%d minutes remaining",
+"tooltip.experienceplus.remaining_uses":"%s uses remaining"
+
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+          [
+            " I ",
+            "IEI",
+            " I "
+          ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result":
+  {
+    "item": "xpplus:basic"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "IRI",
+    "IEI",
+    "ISI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "xpplus:basic"
+    },
+    "R":
+    {
+      "item": "minecraft:rabbit_foot"
+    },
+    "S":
+    {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "result":
+  {
+    "item": "xpplus:emblem_jump"
+  }
+}
