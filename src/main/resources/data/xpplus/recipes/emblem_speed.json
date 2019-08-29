@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ISI",
+    "IEI",
+    "IFI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "xpplus:basic"
+    },
+    "S":
+    {
+      "item": "minecraft:sugar"
+    },
+    "F":
+    {
+      "item": "minecraft:chorus_fruit"
+    }
+  },
+  "result":
+  {
+    "item": "xpplus:emblem_speed"
+  }
+}

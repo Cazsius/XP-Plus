@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "IDI",
+    "IEI",
+    "IGI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "xpplus:basic"
+    },
+    "D":
+    {
+      "item": "minecraft:dandelion"
+    },
+    "G":
+    {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "result":
+  {
+    "item": "xpplus:emblem_clear"
+  }
+}

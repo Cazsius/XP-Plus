@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "IGI",
+    "IEI",
+    "IBI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "xpplus:advanced"
+    },
+    "B":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "G":
+    {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "result":
+  {
+    "item": "xpplus:emblem_thunder"
+  }
+}

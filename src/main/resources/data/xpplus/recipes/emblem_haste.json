@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ISI",
+    "IEI",
+    "IRI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "xpplus:basic"
+    },
+    "S":
+    {
+      "item": "minecraft:sugar"
+    },
+    "R":
+    {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result":
+  {
+    "item": "xpplus:emblem_haste"
+  }
+}

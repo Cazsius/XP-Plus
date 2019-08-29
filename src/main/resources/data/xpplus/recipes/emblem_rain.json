@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "IBI",
+    "IEI",
+    "IBI"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "E":
+    {
+      "item": "xpplus:advanced"
+    },
+    "B":
+    {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result":
+  {
+    "item": "xpplus:emblem_rain"
+  }
+}
