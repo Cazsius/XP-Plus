@@ -47,7 +47,7 @@ public abstract class ItemEmblem extends Item {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity player, Hand hand) {
-        if (player.isSneaking()) {
+        if (player.isCrouching()) {
             ActionResult<ItemStack> success = new ActionResult<>(ActionResultType.SUCCESS, player.getHeldItem(hand));
             if (!toggleEmblemState(world, player, hand)) {
                 if (tryActivateEmblem(world, player, hand)) {
@@ -125,7 +125,7 @@ public abstract class ItemEmblem extends Item {
                 CompoundNBT nbt = stack.getTag();
                 if (nbt.getBoolean("activated")) {
                     boolean state = nbt.getBoolean("enabled");
-                    world.playSound(null, player.posX, player.posY, player.posZ,
+                    world.playSound(null, player.getPosition().getX(), player.getPosition().getY(), player.getPosition().getZ(),
                             SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.PLAYERS,
                             0.5F, (state ? 0.1F : 0.8F));
                     nbt.putBoolean("enabled", !state);
@@ -162,7 +162,7 @@ public abstract class ItemEmblem extends Item {
 
     private static void playActivationSound(World world, PlayerEntity player) {
         SoundEvent sound = SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE;
-        world.playSound(null, player.posX, player.posY, player.posZ, sound, SoundCategory.PLAYERS, 2.0F, 0.2F);
+        world.playSound(null, player.getPosition().getX(), player.getPosition().getY(), player.getPosition().getZ(), sound, SoundCategory.PLAYERS, 2.0F, 0.2F);
     }
 
     private static void createActivationAura(World world, PlayerEntity player) {

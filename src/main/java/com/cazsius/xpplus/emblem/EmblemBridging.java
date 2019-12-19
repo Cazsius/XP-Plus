@@ -23,7 +23,7 @@ import java.util.List;
 
 public class EmblemBridging extends ItemEmblem {
 
-    private static final BlockPos.MutableBlockPos POS = new BlockPos.MutableBlockPos();
+    private static final BlockPos.Mutable POS = new BlockPos.Mutable();
     private static final BlockState MATERIAL = Blocks.COBBLESTONE.getDefaultState();
 
     private final int cost;
@@ -59,7 +59,7 @@ public class EmblemBridging extends ItemEmblem {
     public void onEmblemTick(ItemStack stack, PlayerEntity player, Entity entity, BlockItemUseContext context) {
         if (!isEmblemEnabled(stack)) return;
 
-        POS.setPos(player.posX, player.posY - 1, player.posZ);
+        POS.setPos(player.getPosition().getX(), player.getPosition().getY() - 1, player.getPosition().getZ());
         BlockPos min = POS.subtract(new Vec3i(1, 0, 1));
         BlockPos max = POS.add(new Vec3i(1, 0, 1));
         boolean hasPlacedBlocks = false;
